@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
   box-sizing: border-box;
 
   font-family: system-ui, sans-serif;
@@ -96,7 +97,7 @@ a {
   display: grid;
   grid-template-columns: 50px 1fr;
   padding: 0 2rem;
-  gap: 1rem;
+  column-gap: 1rem;
 }
 
 .title .title-image {
@@ -108,12 +109,30 @@ a {
 .title .title-name {
   align-self: start;
   grid-column: 2 / 3;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .title .greeting {
   align-self: end;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  
+}
+
+.buttons button {
+  height: 2.5rem;
+  width: 6rem;
+  background-color: #1A92D3;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
 }
 
 
