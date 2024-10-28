@@ -1,11 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-
-  /* border: 1px solid red; */
-
   box-sizing: border-box;
-
   font-family: system-ui, sans-serif;
 }
 
@@ -17,6 +13,10 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+image.icon {
+  fill: #FFF;
 }
 
 #wrapper {
@@ -157,6 +157,7 @@ a {
 .main .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 2rem;
   position: relative;
 
@@ -174,7 +175,7 @@ a {
 }
 
 .projects .card {
-  height: 200px;
+  /* height: 200px; */
 
 }
 
